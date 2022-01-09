@@ -1,10 +1,11 @@
 import React from "react";
 import './App.css';
 
-function App() {
-
+const App = () => {
   return (
-    <div data-test='app-component'></div>
+    <div data-test='app-component'>
+      <h1>App Running</h1>
+    </div>
   );
 }
 
