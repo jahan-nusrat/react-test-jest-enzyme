@@ -4,7 +4,8 @@ import './App.css';
 const App = () => {
   return (
     <div data-test='app-component'>
-      <h1>App Running</h1>
+      <h1 data-test='counter-display'>The counter is</h1>
+      <button data-test='increment-button'>Increment Button</button>
     </div>
   );
 }

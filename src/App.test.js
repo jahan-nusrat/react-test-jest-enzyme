@@ -7,16 +7,20 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 test('renders without crashing', () => {
   const wrapper = shallow(<App />);
-  const toFind = wrapper.find("[data-test='app-component']");
-  expect(toFind.length).toBe(1)
+  const appComponent = wrapper.find("[data-test='app-component']");
+  expect(appComponent.length).toBe(1)
 });
 
 test('Renders Increment Button', () => {
-
+  const wrapper = shallow(<App />);
+  const Button = wrapper.find("[data-test='increment-button']");
+  expect(Button.length).toBe(1)
 });
 
 test("Renders Counter Display", () => {
-
+  const wrapper = shallow(<App />);
+  const Counter = wrapper.find("[data-test='counter-display']");
+  expect(Counter.length).toBe(1)
 });
 
 test("Renders Counter Display at 0", () => {
