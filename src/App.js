@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 
 const App = () => {
+  const [count, setCount] = useState(0)
   return (
     <div data-test='app-component'>
-      <h1 data-test='counter-display'>The counter is</h1>
-      <button data-test='increment-button'>Increment Button</button>
+      <h1 data-test='counter-display'>The counter is currently {/*  */}
+        <span data-test='count'>{count}</span>
+      </h1>
+      <button data-test='increment-button' onClick={() => setCount(count + 1)}>Increment Button</button>
     </div>
   );
 }
