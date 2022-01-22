@@ -21,8 +21,15 @@ CMD [ "npm", "run", "start" ]
 
 # docker build -t react-docker:1.0.0-dev .
 # docker images
-# docker --rm -it --name web -p 3000:3000 react-docker:1.0.0-dev
+# docker run --rm -it --name web -p 3000:3000 react-docker:1.0.0-dev
 # docker ps
 # docker exec -it web bash
 # ls
 # ls -l
+# docker run --rm -it --name web -p 3000:3000 -v %cd%:/workspace react-docker:1.0.0-dev
+# docker run -it -d busybox
+# docker stop CONTAINER_ID
+# docker rm CONTAINER_ID
+# docker ps -a //shows everything that is running
+# docker run -it -d --name friendly_keldysh busybox
+# docker rm -f friendly_keldysh

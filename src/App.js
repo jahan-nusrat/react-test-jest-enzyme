@@ -21,8 +21,8 @@ const App = () => {
       <button data-test='increment-button' onClick={() => {
         error && setError(false)
         setCount(count + 1)
-      }}>Increment Button</button>
-      <button data-test='decrement-button' onClick={handleDecrementBtn}>Decrement Button</button>
+      }}>Increment</button>
+      <button data-test='decrement-button' onClick={handleDecrementBtn}>Decrement</button>
 
       <p data-test='error' className={`error ${error ? '' : 'hidden'}`}>Counter can't go below zero</p>
     </div>
